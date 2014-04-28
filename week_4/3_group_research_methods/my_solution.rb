@@ -4,13 +4,26 @@ i_want_pets = ["I", "want", 3, "pets", "but", "I", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, 
             "Annabelle" => 0, "Ditto" => 3}
 
-# Person 1's solution
 def my_array_finding_method(source, thing_to_find)
-  # Your code here!
+  	result = []
+  	source.each do |x| 
+  		if x.class == Fixnum
+  			next
+  		elsif x.include?(thing_to_find) 
+			result << x
+  		end
+  	end
+  	result
 end
 
 def my_hash_finding_method(source, thing_to_find)
-  # Your code here!
+  result = []
+  source.collect do |k, v| 
+  	if v == thing_to_find  
+  		result << k 
+  	end
+  end
+  result
 end
 
 # Identify and describe the ruby method you implemented. 
@@ -20,15 +33,27 @@ end
 
 # Person 2
 def my_array_modification_method(source, thing_to_modify)
-  # Your code here!
-end
+	result = []
+	source.each do |element|
+		element += thing_to_modify if
+		element.is_a?(Numeric)
+			result << element
+		end
+		result
+	end
 
 def my_hash_modification_method(source, thing_to_modify)
-  # Your code here!
+ 	result = []
+	source.each do |element|
+		element += thing_to_modify if
+		element.is_a?(Numeric)
+			result = result + element
+		end
+		result
 end
 
 # Identify and describe the ruby method you implemented. 
-# 
+# I couldn't get the Hash to work, but was able to changes elements in the array. 
 #
 #
 
