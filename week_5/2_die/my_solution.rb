@@ -14,16 +14,21 @@
 
 class Die
   def initialize(labels)
+  	@labels = labels
   end
 
   def sides
+  	puts @labels.count
   end
 
   def roll
+  	puts @labels.sample
   end
 end
 
-
+die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
+die.sides
+die.roll
 
 # 4. Refactored Solution
 
