@@ -13,20 +13,27 @@
 # 3. Initial Solution
 
 class Die
-  def initialize(sides)
+  def initialize(sides, roll)
+    @sides = sides 
+    @roll = roll
     # code goes here
   end
   
   def sides
+  	puts @sides 
     # code goes here
   end
   
   def roll
+    puts rand(1..6)
     # code goes here
   end
 end
 
 
+die = Die.new(6, @roll)
+die.sides
+die.roll
 
 # 4. Refactored Solution
 
