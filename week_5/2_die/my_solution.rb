@@ -30,6 +30,8 @@ die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
 die.sides
 die.roll
 
+
+
 # 4. Refactored Solution
 
 

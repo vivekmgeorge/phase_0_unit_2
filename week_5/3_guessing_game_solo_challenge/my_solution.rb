@@ -12,18 +12,26 @@
 
 # 3. Initial Solution
 
-class GuessingGame
-  def initialize(answer)
+# class GuessingGame
+#   def initialize(answer)
     # Your initialization code goes here
-  end
+  # end
   
   # Make sure you define the other required methods, too
-end
+# end
 
 
 
 
 # 4. Refactored Solution
+class GuessingGame
+  def initialize(answer)
+  end
+
+  def guess(try)
+  	@try = try
+  end
+end
 
 
 
