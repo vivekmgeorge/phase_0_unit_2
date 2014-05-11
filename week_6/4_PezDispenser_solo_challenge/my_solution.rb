@@ -23,7 +23,23 @@
 class PezDispenser
  
 # your code here!
- 
+ def initialize(flavors)
+	@flavors = flavors 	 
+ end
+ 	def pez_count
+		@flavors.count 
+	end
+	def see_all_pez
+		@flavors.each do |flavors|
+		end 
+	end
+	def add_pez(flavor)
+		@flavors.push(flavor)
+	end
+	def get_pez
+		@flavors.pop
+	end
+
 end
  
 
@@ -39,7 +55,7 @@ end
 
 flavors = %w(cherry chocolate cola grape lemon orange peppermint raspberry strawberry).shuffle
 super_mario = PezDispenser.new(flavors)
-puts "A new pez dispenser has been created. You have #{super_mario.pez_count} pez!"  
+puts "A new pez dispenser has been created. You have  #{super_mario.pez_count} pez!"  
 puts "Here's a look inside the dispenser:"  
 puts super_mario.see_all_pez 
 puts "Adding a purple pez."
@@ -53,3 +69,4 @@ puts "Now you have #{super_mario.pez_count} pez!"
 
 
 # 5. Reflection 
+# Not super hard just challenging remembering the tricks. The last part was tricky but Jess (during office hours) helped me with pop part.
