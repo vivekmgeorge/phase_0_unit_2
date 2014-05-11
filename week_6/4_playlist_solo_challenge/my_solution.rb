@@ -9,6 +9,52 @@
 
 
 # Initial Solution
+class Song
+
+	def initialize(song, artist)
+		@song = song
+		@artist = artist
+	end
+	
+	def play
+	end
+
+end
+
+class Playlist
+	def initialize (song1, song2, song3)
+		@list = [song1, song2, song3]
+		# @list = song2
+		# @list = song3
+	end
+
+	def add(song1, song2)
+		@list.push(song1,song2) 
+		# = @list.add
+	end
+	
+	def num_of_tracks
+		@list.count
+	end
+
+	def remove(song1)
+		@list.delete(song1)
+	end
+	
+	def includes?(lying_from_you)
+		@list == lying_from_you
+	end
+
+	def play_all
+	end
+
+	def display
+		puts @list
+	end
+
+
+end
+
 
 
 
